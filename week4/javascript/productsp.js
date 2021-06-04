@@ -30,7 +30,7 @@ createApp({
     this.getData();
   },
   methods: {
-    getData(page) {
+    getData(page = 1) {
       const url = `${apiUrl}/api/${apiPath}/admin/products?page=${page}`;
 
       axios.get(url)
